@@ -1,0 +1,21 @@
+
+
+<view class="search {{active? 'active':'lazy'}}">
+    <view class="icon">
+        <icon type='search' size="70rpx"></icon>
+    </view>
+    <view class="input">
+        <input type="text" placeholder='股票代码/名称' value="{{keyword}}" 
+        bindinput="input" bindfocus="focus" bindblur="blur" />
+    </view>
+    <view class="close" wx:if="{{keyword!=''}}" bindtap="clear">
+        <image src="/images/close.png"></image>
+    </view>
+</view>
+<view class="hint">
+    <block wx:for="{{candidate_codes}}" wx:key="*this" wx:for-item="code">
+        <view bindtap="to_detail" data-code="{{code}}">
+            {{stock_dict[code]}} {{code}}
+        </view>
+    </block>
+</view>

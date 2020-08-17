@@ -1,0 +1,30 @@
+<view class="title head">板块</view>
+<view class="flex-row">
+    <view class="flex-column" wx:for="{{sectors}}" wx:for-item="sector" wx:key="*this">
+        <view class="feature">{{sector.name}}</view>
+        <view class="content">{{sector.close}}</view>
+        <view class="flex-row small rise content">
+            <view class="flex-start">{{sector.up}}</view>
+            <view class="flex-end">{{sector.upr}}%</view>
+        </view>
+    </view>
+</view>
+<view wx:for="{{rankings}}" wx:for-item="rank" wx:key="*this">
+    <view class="title">{{rank.title}}</view>
+    <view class="flex-row feature">
+        <view>股票</view>
+        <view>收盘价</view>
+        <view>涨幅</view>
+        <view>成交量</view>
+    </view>
+    <view wx:for="{{rank.content}}" wx:key="*this" wx:for-item="stock" class="flex-row content" 
+    bindtap="to_detail" data-code="{{stock.code}}" hover-class="bg" hover-stay-time="{{hov}}">
+        <view class="flex-column">
+            <view>{{stock.name}}</view>
+            <view class="small">{{stock.code}}</view>
+        </view>
+        <view>{{stock.close}}</view>
+        <view>{{stock.upr}}%</view>
+        <view>{{stock.volume}}</view>
+    </view>
+</view>

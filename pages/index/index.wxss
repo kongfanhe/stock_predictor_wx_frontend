@@ -1,0 +1,54 @@
+
+
+view.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+view.title.head{
+    margin-top: 1vh;
+}
+
+view.rise{
+    width: 25vw;
+}
+
+view.flex-row > view, view.flex-column > view{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+view.title{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    margin-top: 5vh;
+    border-bottom: 1px solid #ddd;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+view.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+view.small{
+    font-size: x-small;
+}
+
+view.content, view.feature{
+    padding: 1vw;
+}
+
+view.content{
+    color: #666;
+}
+
+view.bg {
+    background: #aaa;
+}

@@ -1,0 +1,42 @@
+
+view.title{
+    border-bottom: 1px solid #ddd;
+    margin: 3vw;
+    padding-bottom: 30rpx;
+    display: flex;
+    justify-content: center;
+}
+
+view.wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+view.wrap-container > view {
+    background: #ddd;
+    width: 27vw;
+    height: 27vw;
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+view.wrap-container > view.bg {
+    background: #aaa;
+}
+
+view.wrap-container > view > view {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+view.code{
+    font-size: smaller;
+}
+
+view.wrap-container > view.add{
+    background: none;
+    border: 1px dashed #aaa;
+}

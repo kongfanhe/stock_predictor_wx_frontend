@@ -1,0 +1,22 @@
+<view wx:if="{{ready}}" class="panel">
+
+    <view class="name">
+        <view >{{predict.name}} {{predict.code}}</view>
+        <view bindtap="toggle_favorite">
+            <image src="/images/favorite.png" wx:if="{{favorite}}"></image>
+            <image src="/images/favorite_not.png" wx:else></image>
+        </view>
+    </view>
+
+    <view class="flex-row content">
+        <view>日期</view>
+        <view wx:for="{{predict.features}}" wx:key="*this" wx:for-item="f">{{f}}</view>
+    </view>
+    <view class="flex-row content" wx:for="{{predict.dates}}" wx:key="i" wx:for-index="i">
+        <view>{{predict.dates[i]}}</view>
+        <view wx:for="{{predict.features}}" wx:key="j" wx:for-index="j">
+            {{predict.data[j][i]}}
+        </view>
+    </view>
+    
+</view>

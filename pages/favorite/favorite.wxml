@@ -1,0 +1,12 @@
+
+<view class="title">收藏股票列表</view>
+<view class="wrap-container">
+    <view wx:for="{{my_codes}}" hover-class="bg" hover-stay-time="{{hov}}"
+      wx:for-index="i" wx:key="i" bindtap="to_detail" data-i="{{i}}" wx:for-item="code">
+        <view>{{code}}</view>
+        <view class="code">{{stocks[code]}}</view>
+    </view>
+    <view class="add" hover-class="bg" hover-stay-time="{{hov}}" bindtap="add_stock">
+        <view>+添加</view>
+    </view>
+</view>
