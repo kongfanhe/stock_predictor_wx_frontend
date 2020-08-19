@@ -1,4 +1,4 @@
-# stock_predictor_wx_frontend
+# Weixin Mini-Program frontend for LSTM stock predictor
 
 微信小程序前端 - 股票预测
 
