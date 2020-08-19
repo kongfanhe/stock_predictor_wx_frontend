@@ -24,7 +24,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.3",
-	"appid": "fill-in-yours",
+	"appid": "fill-in-your-appid",
 	"projectname": "lstm_stock",
 	"debugOptions": {
 		"hidedInDevtools": []
