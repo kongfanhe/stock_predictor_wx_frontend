@@ -1,4 +1,4 @@
-# Weixin Mini-Program frontend
+# Weixin Mini Program frontend
 
 ## Preparation
 * You need backend API. Deploy one and change the line of code
