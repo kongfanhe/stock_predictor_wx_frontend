@@ -25,7 +25,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.11.3",
 	"appid": "wx7f724464d0201627",
-	"projectname": "shenduguzhi",
+	"projectname": "lstm_stock",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
